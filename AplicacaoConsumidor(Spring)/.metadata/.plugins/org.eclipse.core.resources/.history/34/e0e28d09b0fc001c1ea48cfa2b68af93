@@ -1,0 +1,52 @@
+package com.consumer.consumer.rabbitmq;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.support.converter.AbstractJackson2MessageConverter;
+import org.springframework.amqp.support.converter.ContentTypeDelegatingMessageConverter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.handler.annotation.Payload;
+import org.springframework.stereotype.Component;
+
+import com.consumer.consumer.models.ContaBancariaModel;
+import com.consumer.consumer.service.ContaBancariaService;
+import com.fasterxml.jackson.core.exc.StreamReadException;
+import com.fasterxml.jackson.databind.DatabindException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
+import org.springframework.amqp.core.Message;
+
+public class Consumer {
+	
+	  @Autowired 
+	  ContaBancariaService contaService;
+	  
+	  RabbitMQConfiguration config = new RabbitMQConfiguration();
+	
+	  @RabbitListener(queues = "${spring.rabbitmq.queue}") 
+	  public void listener(@Payload Message message) throws StreamReadException, DatabindException, IOException{
+		  
+		  ContaBancariaModel conta = new ContaBancariaModel();
+		  
+		  ObjectMapper objectMapper = new ObjectMapper();
+		  objectMapper.readValue(message.getBody(), ContaBancariaModel.class);
+		  
+		  contaService.create(conta);
+		  
+		  this.objetoTeste(conta); 
+		  
+	  }
+	
+	  public void objetoTeste(ContaBancariaModel conta) {
+		  System.out.println("MENSAGEM RECEBIDA:"); 
+			/*
+			 * System.out.println(conta.getAno()); System.out.println(folha.getHoras());
+			 * System.out.println(folha.getFgts());
+			 */
+	  }
+	 
+
+}

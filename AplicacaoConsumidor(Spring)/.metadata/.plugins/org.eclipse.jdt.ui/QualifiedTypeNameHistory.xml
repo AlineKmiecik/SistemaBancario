@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.consumer.consumer.rabbitmq.RabbitMQConfiguration"/>
+    <fullyQualifiedTypeName name="com.consumer.consumer.service.ContaBancariaService"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.consumer.consumer.models.ContaBancariaModel"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.consumer.consumer.repositories.ContaBancariaRepository"/>
+</qualifiedTypeNameHistroy>

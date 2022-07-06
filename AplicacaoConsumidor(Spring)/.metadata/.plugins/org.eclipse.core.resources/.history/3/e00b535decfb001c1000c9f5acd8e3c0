@@ -1,0 +1,6 @@
+package com.consumer.consumer.rabbitmq;
+
+@Configuration
+public class RabbitMQConfiguration {
+
+}

@@ -1,0 +1,7 @@
+
+server.port=8090
+
+
+spring.rabbitmq.addresses= amqps://xmhiemjp:i_JlXLBa-Uq1U6MSLUw6nTSsbYryajpR@chimpanzee.rmq.cloudamqp.com/xmhiemjp
+spring.rabbitmq.queue= folhaPagamentocadastro
+spring.rabbitmq.queue2= folhaPagamentoconsulta

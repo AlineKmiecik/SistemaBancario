@@ -1,0 +1,5 @@
+package com.consumer.consumer.models;
+
+public class ContaBancariaModel {
+
+}

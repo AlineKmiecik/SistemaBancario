@@ -1,0 +1,21 @@
+package com.consumer.consumer.models;
+
+import java.io.Serializable;
+
+public class ContaBancariaModel implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	private String nome;
+    private String cpf;
+    private int agencia;
+    private int conta;
+    
+    public ContaBancariaModel() {
+    	nome = "";
+    	cpf = 0;
+    	agencia = 0;
+    	conta = 0;
+    }
+		
+}

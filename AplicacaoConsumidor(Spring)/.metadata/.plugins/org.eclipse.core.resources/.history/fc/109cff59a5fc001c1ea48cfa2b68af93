@@ -1,0 +1,7 @@
+
+server.port=8090
+
+
+spring.rabbitmq.addresses= amqps://uabqqpap:tWRpBdGKChchklNtTkV55OHCiivwNMi9@moose.rmq.cloudamqp.com/uabqqpap
+spring.rabbitmq.queue= folhaPagamentocadastro
+spring.rabbitmq.queue2= folhaPagamentoconsulta

@@ -1,0 +1,5 @@
+package com.consumer.consumer.repositories;
+
+public class ContaBancariaRepository {
+
+}

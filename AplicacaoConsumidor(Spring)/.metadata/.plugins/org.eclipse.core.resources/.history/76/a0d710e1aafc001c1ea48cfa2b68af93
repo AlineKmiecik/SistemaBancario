@@ -1,0 +1,28 @@
+package com.consumer.consumer.repositories;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.consumer.consumer.models.ContaBancariaModel;
+
+public class ContaBancariaRepository {
+	public List<ContaBancariaModel> contas;
+	
+	public ContaBancariaRepository() {
+		contas = new ArrayList<>();
+	}
+
+	public List<ContaBancariaModel> getContas() {
+		return contas;
+	}
+
+	public void setContas(List<ContaBancariaModel> contas) {
+		this.contas = contas;
+	}
+	
+	public void addConta(ContaBancariaModel conta) {
+		this.contas.add(conta);
+	}
+	
+	
+}

@@ -1,0 +1,9 @@
+package com.consumer.consumer.repositories;
+
+public class ContaBancariaRepository {
+	public List<> contas;
+	
+	public ContaBancariaRepository() {
+		 folhas = new ArrayList<>();
+	}
+}

@@ -1,0 +1,10 @@
+package com.consumer.consumer.service;
+
+import com.consumer.consumer.models.ContaBancariaModel;
+
+public class ContaBancariaService {
+	
+	public void create(ContaBancariaModel conta) {
+		
+	}
+}

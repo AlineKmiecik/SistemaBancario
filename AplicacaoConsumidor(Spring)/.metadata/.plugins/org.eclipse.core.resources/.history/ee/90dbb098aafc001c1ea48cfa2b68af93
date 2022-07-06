@@ -1,0 +1,21 @@
+package com.consumer.consumer.service;
+
+import org.springframework.stereotype.Service;
+
+import com.consumer.consumer.models.ContaBancariaModel;
+import com.consumer.consumer.repositories.ContaBancariaRepository;
+
+@Service
+public class ContaBancariaService {
+	
+	private ContaBancariaRepository contaRepository = new ContaBancariaRepository();
+	
+	public static void create(ContaBancariaModel conta) {
+		try {
+			this.contaRepository.addConta(conta);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

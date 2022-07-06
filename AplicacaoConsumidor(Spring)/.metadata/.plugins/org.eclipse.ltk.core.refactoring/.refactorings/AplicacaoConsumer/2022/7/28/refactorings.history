@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.consumer.consumer.rabbitmq.config&apos; to &apos;RabbitMQConfiguration&apos;&#x0D;&#x0A;- Original project: &apos;AplicacaoConsumer&apos;&#x0D;&#x0A;- Original element: &apos;com.consumer.consumer.rabbitmq.config&apos;&#x0D;&#x0A;- Renamed element: &apos;com.consumer.consumer.rabbitmq.RabbitMQConfiguration&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;config&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.consumer.consumer.rabbitmq{config.java[config" matchStrategy="1" name="RabbitMQConfiguration" qualified="false" references="true" similarDeclarations="false" stamp="1656975281582" textual="false" version="1.0"/>
+</session>
